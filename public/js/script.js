@@ -11,14 +11,14 @@ if (navigator.geolocation) {
             console.error(error);
         },
         {
-            enableHighAccuracy: false, // Changed to false for faster, less strict loading
-            timeout: 20000,            // Increased from 5000 to 20000 (20 seconds)
+            enableHighAccuracy: true,
+            timeout: 5000,            
             maximumAge: 0,
         }
     );
 }
 
-// Initialize the map, default centered at 0, 0 with zoom 16
+// Initialize the map, default centered at 0, 0 with zoom 19
 const map = L.map("map").setView([0, 0], 19);
 
 // Setup map tiles
