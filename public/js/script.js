@@ -19,7 +19,7 @@ if (navigator.geolocation) {
 }
 
 // Initialize the map, default centered at 0, 0 with zoom 19
-const map = L.map("map").setView([0, 0], 19);
+const map = L.map("map").setView([0, 0], map.getZoom());
 
 // Setup map tiles
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
